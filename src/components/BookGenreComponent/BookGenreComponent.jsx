@@ -2,7 +2,7 @@ import React from 'react'
 
 const BookGenreComponent = () => {
   return (
-    <div>BookGenreComponent</div>
+    <div>Inime tha pannanum :) </div>
   )
 }
 

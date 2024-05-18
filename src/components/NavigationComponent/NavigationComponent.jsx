@@ -2,16 +2,18 @@ import React from "react";
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import DisplayBooksComponent from "../DisplayBooksComponent/DisplayBooksComponent";
 import BookGenreComponent from "../BookGenreComponent/BookGenreComponent";
+import '../NavigationComponent/NavigationComponent.css'
+
 const NavigationComponent = () => {
   return (
     <Router>
-      <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
+      <div className="navigation-container">
+        <ul className="navigation-list">
+          <li className="navigation-item">
+            <Link to="/" className="navigation-link">Home</Link>
           </li>
-          <li>
-            <Link to="/BookGenre">Book genre</Link>
+          <li className="navigation-item">
+            <Link to="/BookGenre" className="navigation-link">Book genre</Link>
           </li>
         </ul>
       </div>
